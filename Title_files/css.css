@@ -6,7 +6,7 @@
 }
 
 .image_block{
-    margin-left: 200px;
+    margin-left: 300px;
 
 }
 
@@ -24,7 +24,7 @@
 }
 
 #header li{
-    margin: 15px;
+    margin: 20px;
 }
 
 #header .provider{
@@ -57,23 +57,6 @@
 #container1 .Banner{
     float: right;
     margin-top: 10px;
-    z-index: 1;
-
-}
-
-#container1 .Banner_buttons{
-    float: right;
-    position: absolute;
-    margin-left: 1124px;
-    margin-top: 100px;
-
-}
-
-#container1 .Banner_text{
-    float: right;
-    position: absolute;
-    margin-left: 280px;
-    margin-top: 320px;
 
 }
 
