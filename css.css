@@ -163,11 +163,41 @@
 #container3{
     width: 1000px;
     height: 500px;
-    background-color: #4c1bff;
+    background-color: aquamarine;
     margin: 0 auto;
 
 }
 
+.container3_part1_p1{
+    font-size: 30px;
+    border-bottom:  solid #4c1bff;
+}
+
+.container3_part1_p2{
+    float: right;
+    margin-top: -25px;
+    background-color: red;
+    margin-right: 20px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.container3_part1 img{
+    float: right;
+    margin-top: -25px;
+    background-color: red;
+    margin-right: 12px;
+    z-index: 99;
+
+}
+
+
+
+.container3_part2 ul li{
+    width: 100px;
+    float: left;
+
+}
 
 
 
