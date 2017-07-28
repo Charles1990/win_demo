@@ -305,6 +305,7 @@ float: left;
 
 .container4_part1{
     width: 300px;
+    float: left;
 }
 
 .container4_part1 p{
@@ -317,14 +318,79 @@ float: left;
 
 .container4_part1_img2{
     float: left;
-    border-bottom: dotted #4c1bff;
-    padding-right: 100px;
+
+    padding-right: 20px;
 }
 
 
 
 
+.container4_part2{
+    width: 300px;
+    float: left;
+}
 
+
+.container4_part2_img1{
+    margin: 30px 20px;
+    border-bottom: dotted #4c1bff;
+    height: 43px;
+    width:287px;
+    padding: 0 20px;
+}
+
+.container4_part2{
+    width: 300px;
+}
+
+.container4_part2 p{
+    font-size: 14px;
+    margin-left:64px;
+    padding-left: -100px;
+    width: 260px;
+
+}
+
+.container4_part2_img2{
+    float: left;
+
+    padding-right: 20px;
+}
+
+
+
+
+.container4_part3{
+    width: 300px;
+    float: left;
+}
+
+
+.container4_part3_img1{
+    margin: 30px 20px;
+    border-bottom: dotted #4c1bff;
+    height: 43px;
+    width:287px;
+    padding: 0 20px;
+}
+
+.container4_part3{
+    width: 300px;
+}
+
+.container4_part3 p{
+    font-size: 14px;
+    margin-left:64px;
+    padding-left: -100px;
+    width: 260px;
+
+}
+
+.container4_part3_img2{
+    float: left;
+
+    padding-right: 20px;
+}
 
 
 
