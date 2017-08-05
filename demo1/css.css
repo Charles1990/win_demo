@@ -13,32 +13,39 @@
 
 
 #header ul{
-    width: 1000px;
+    /*width: 1000px;*/
     height: 100px;
-    margin-top: -50px;
+    line-height: 100px;
+    /*margin-top: -50px;*/
+
 
 }
 
 #header ul li{
-    float: right;
-
+    /*float: right;*/
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    color: #000;
+    padding: 0 10px;
+    text-align: center;
 }
 
-#header li{
-    margin: 15px;
-}
+/*#header li{*/
+    /*margin: 15px;*/
+/*}*/
 
-#header .provider{
-    padding: 5px;
-    background-color: orangered;
-    margin-top: 15px;
-}
+/*#header .provider{*/
+    /*padding: 5px;*/
+    /*background-color: orangered;*/
+    /*margin-top: 15px;*/
+/*}*/
 
-#header .Join{
-    padding-left: 40px;
-    background-color: royalblue;
+/*#header .Join{*/
+    /*padding-left: 40px;*/
+    /*background-color: royalblue;*/
 
-}
+/*}*/
 
 /*Container1*/
 
@@ -184,20 +191,24 @@
 
 .container3_part1 img{
     float: right;
-    margin-top: -25px;
+    margin-left: 5px;
+    /*margin-top: -25px;*/
     background-color: red;
-    margin-right: 12px;
-    z-index: 99;
+    /*margin-right: 12px;*/
+    /*z-index: 99;*/
 
 }
 
 .container3_part2{
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 18px;
     float: left;
 }
 
+#container3 ul{
+    list-style: none;
 
+}
 
 .container3_part2 ul li{
     float: left;
@@ -206,6 +217,14 @@
 
 }
 
+//
+
+.container3_part2 ul li img{
+    display: none;
+}
+.container3_part2 ul li.on img{
+    display: block;
+}
 
 .container3_part2 ul{
     width: 240px;

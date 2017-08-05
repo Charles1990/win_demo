@@ -1,0 +1,66 @@
+
+/*这是顶部图片*/
+#header{
+    width: 1200px;
+    background-color: #cccccc;
+}
+
+.header_top img{
+    float: left;
+}
+
+/*这是登录会员部分*/
+
+.login a{
+    text-decoration: none;
+    color: #000000;
+
+
+}
+.login a:hover{
+    color: blue;
+}
+
+.login_menu {
+    position: absolute;
+    width: 120px;
+    top:30px;
+    left: -17px;
+    display: none;
+
+}
+
+
+.HH:hover .login_menu{
+    display: block;
+
+}
+
+
+
+
+.log ul li{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    color: #000000;
+    padding: 0 10px;
+    text-align: center;
+    position: relative;
+    border-right: 1px solid;
+
+
+}
+.login{
+    float: right;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}

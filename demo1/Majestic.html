@@ -8,13 +8,22 @@
 </head>
 <body>
 
-<div id="header">
-    <div class="image_block">
-        <img src="image/Logo.png" height="61" width="205"/>
-    </div>
+<div id="header" class="clearfix" style="position: relative">
+    <!--<div class="image_bloc-->
+        <!--<img src="image/Logo.png" height="61" width="205"/>-->
+    <!--</div>-->
 
-    <ul>
-        <li class="Join">Join</li>
+
+    <!--clearfix ：主要用于因为子集浮动而产生的坍塌问题-->
+
+    <a href="javascript:;" style="display:block; width: 205px; height: 61px; float: left;">
+        <img src="image/Logo.png" height="61" width="205"/>
+    </a>
+
+    <!--将元素变成行间元素后，就可以实现在浮动的时候，正常的左右-->
+
+    <ul style="float: right;" class="">
+        <li class="Join"><a href="javascript:;">Join</a></li>
         <li>Sing In</li>
         <li>Contact</li>
         <li>Clients</li>
@@ -30,7 +39,7 @@
 <div id="container1">
 
     <img src="image/Social.png" class="Social" height="22" width="101"/>
-    <div style="clear: both"></div>
+    <!--<div style="clear: both"></div>-->
     <img src="image/Banner.png" class="Banner"/>
     <img src="image/Banner Buttons.png" class="Banner_buttons" height="91" width="168"/>
     <img src="image/Banner Text.png" class="Banner_text" height="168" width="450"/>
@@ -72,20 +81,20 @@
 
     <div class="container3_part1">
     <p class="container3_part1_p1">Our Featured Professionals</p>
-    <img src="image/Shape 5.png" height="17" width="8"/>
-    <p class="container3_part1_p2">Penantis Morbi Diam</p>
+
+    <p class="container3_part1_p2">Penantis Morbi Diam <img src="image/Shape 5.png" height="17" width="8"/> </p>
 
     </div>
 
     <div class="container3_part2">
         <img src="image/Rectangle 10.png" height="74" width="85"/>
         <ul>
-            <li>Phillip Ward</li>
-            <li>Adco Architecture</li>
-            <li>Architect</li>
-            <li>See Profile</li>
+            <li class="on">Phillip Ward <img src="image/Shape 3.png"  class="container3_part2_img2" height="9" width="8"/></li>
+            <li>Adco Architecture <img src="image/Shape 3.png"  class="container3_part2_img2" height="9" width="8"/></li>
+            <li>Architect <img src="image/Shape 3.png"  class="container3_part2_img2" height="9" width="8"/></li>
+            <li>See Profile <img src="image/Shape 3.png"  class="container3_part2_img2" height="9" width="8"/></li>
         </ul>
-        <img src="image/Shape 3.png"  class="container3_part2_img2" height="9" width="8"/>
+
     </div>
 
 
