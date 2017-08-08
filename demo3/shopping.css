@@ -1,4 +1,8 @@
 
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
 /*这是顶部图片*/
 #header{
     width: 1200px;
@@ -37,8 +41,6 @@
 }
 
 
-
-
 .log ul li{
     display: inline-block;
     height: 18px;
@@ -56,11 +58,78 @@
     margin-top: 10px;
 }
 
+/*这是logo部分*/
+
+#logo{
+    width: 1000px;
+    margin: 0 auto;
+    /*height: 200px;*/
+    background-color: #4caf50;
+    margin-top: 10px;
+}
+.logo_two{
+    float: left;
+}
+.search{
+    float: left;
+    padding-top: 20px;
+}
+
+.logo_img2{
+    padding-left: 15px;
+}
+
+#select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    border: 1px solid red;
+    width: 74px;
+    background: url("../demo3/image/形状 63.png") no-repeat scroll right center transparent;
+    float: left;
+    line-height: 30px;
+}
+
+.logo_text{
+    width: 300px;
+    border: 1px solid red;
+    height: 30px;
+
+}
+
+.logo_button{
+    border: none;
+    background: url("../demo3/image/search1.png") no-repeat center red;
+    line-height: 29px;
+    width: 40px;
+    margin-left: -7px;
+}
+
+.form{
+    float: left;
+}
+
+.cart{
+    width: 140px;
+    height: 36px;
+    background-color: orange;
+    float: right;
+    /*padding-top: 20px;*/
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+
+}
+
+.cart img{
+    border-right: 1px solid white;
+    padding-right: 14px;
+}
 
 
 
 
 
 
-.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-.clearfix{*+height:1%;}
+
+
