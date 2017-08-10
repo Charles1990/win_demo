@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      }
+    ul li{
+      list-style: none;
+      }
+
+    #container{
+      width: 400px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pic{
+      width: 1600px;
+      height: 200px;
+      position: absolute;
+      animation-name: focusmap;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+      transition: translate(0,0)
+
+    }
+  @keyframes focusmap {
+  10%{
+      left: 0;
+    }
+
+  30%{
+      left: -400px;
+    }
+
+  60%{
+      left: -800px;
+    }
+  90%{
+      left: -1200px;
+    }
+
+  }
+
+
+
+
+
+    .pic li{
+      float: left;
+    }
+    .pic li img{
+      width: 400px;
+      height: 200px;
+    }
+
+
+</style>
+
+</head>
+<body>
+
+
+  <div id="container">
+    <div class="pic">
+        <ul>
+          <li><a href="javascript:;"><img src="timg2.jpeg" alt="" /></a></li>
+          <li><a href="javascript:;"><img src="timg.jpeg" alt="" /></a></li>
+          <li><a href="javascript:;"><img src="timg3.jpg" alt="" /></a></li>
+          <li><a href="javascript:;"><img src="timg4.jpeg" alt="" /></a></li>
+          <!-- <li><a href="javascript:;"><img src="timg2.jpeg" alt="" /></a></li> -->
+        </ul>
+    </div>
+  </div>
+
+
+
+</body>
+</html>

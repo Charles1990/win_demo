@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        ul li{
+            list-style: none;
+        }
+
+        #container{
+            width: 600px;
+            height: 50px;
+            position: relative;
+        }
+
+        .daohang{
+            position: absolute;
+        }
+
+
+        .daohang li{
+            float: left;
+            padding-right: 20px;
+
+        }
+
+        .cijidaohang{
+            width: 86px;
+            margin-right: -20px;
+        }
+
+
+        .cijidaohang li{
+            border: 1px solid red;
+
+        }
+        .cijidaohang{
+            /*display: none;*/
+        }
+
+
+        .HH:hover .cijidaohang{
+            display: block;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="container">
+
+       <ul class="daohang">
+           <li><a href="javascript:;">首页</a></li>
+           <li class="HH"><a href="javascript:;">主要菜单</a>
+               <ul class="cijidaohang">
+                   <li><a href="javascript:;">次级菜单</a>
+                       <ul class="cijidaohang2">
+                           <li><a href="javascript:;">次级菜单</a></li>
+                           <li><a href="javascript:;">次级菜单</a></li>
+                           <li><a href="javascript:;">次级菜单</a></li>
+
+                       </ul>
+                       
+                   </li>
+                   <li><a href="javascript:;">次级菜单</a></li>
+                   <li><a href="javascript:;">次级菜单</a></li>
+
+               </ul>
+
+
+           </li>
+           <li><a href="javascript:;">次要菜单</a></li>
+           <li><a href="javascript:;">第三菜单</a></li>
+           <li><a href="javascript:;">第四菜单</a></li>
+
+
+
+
+       </ul>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>商城左侧大分类导航菜单</title>
+</head>
+<style>
+ *{
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ }
+ body{
+ line-height:2em;
+ font-size:12px
+ }
+ a{
+ color:#666666;
+ text-decoration:none;
+ }
+
+ .hc_lnav{ /*全部商品导航栏样式*/
+ width:150px;
+ margin-top: 70px;
+ }
+ .hc_lnav .allbtn{
+ position:relative /*全部商品下面菜单的定位*/
+ }
+ .hc_lnav .allbtn h2 a{
+ line-height:36px;
+ background-color:#358000;
+ padding-left:10px;
+ width:150px;
+ display:block;
+ height:36px;
+ color:#ffffff;
+ font-size:14px;
+ }
+ .hc_lnav .allbtn h2 a:hover {
+ background-color:#358000; /*鼠标停留在全部商品导航栏上面的样式*/
+ }
+
+ .hc_lnav .allbtn ul {
+
+ position:absolute;
+ background-color:#60a411; /*鼠标停留在全部商品导航栏上面下面菜单的样式*/
+ width:150px;
+ display:none;
+ height:686px;
+ top:36px;
+ }
+
+ .hc_lnav .allbtn ul li{ /*ul下面li的样式*/
+ padding-bottom:7px;
+ clear:both;
+ cursor:default
+ }
+
+ .hc_lnav .allbtn ul li .tx{ /*每个商品大分类的样式，*/
+ line-height:35px;
+ background-color:#559b0d;
+ padding-left:10px;
+ background-repeat:no-repeat;
+ height:35px;
+
+ }
+ .hc_lnav .allbtn ul li .tx a{
+ font-family:微软雅黑, 黑体;
+ color: #e6f8e9;font-size:14px;
+ }
+ .hc_lnav .allbtn ul li .tx a i{
+ line-height:25px; /*选项旁边的图片*/
+ margin-top:5px;
+ width:25px;
+ float:left;
+ height:25px;
+ margin-right:10px;
+ }
+ /*div里面的小图片，像各地名优茶旁边的图*/
+ .hc_lnav .allbtn ul li.a1 .tx a i{background-image:url(http://img.php.cn/upload/course/000/000/006/5822dac38ab18673.png)}
+ .hc_lnav .allbtn ul li.a2 .tx a i{background-image:url(http://img.php.cn/upload/course/000/000/006/5822dadc7f048889.png)}
+ .hc_lnav .allbtn ul li.a3 .tx a i{background-image:url(http://img.php.cn/upload/course/000/000/006/5822daff1dc12522.png)}
+ .hc_lnav .allbtn ul li.a4 .tx a i{background-image:url(http://img.php.cn/upload/course/000/000/006/5822db0c56bdf566.png)}
+
+ .hc_lnav .allbtn ul li dl{ /*菜单下面最右侧的样式*/
+
+ zoom:1;
+ color:#ffffff;
+ clear:both;
+ overflow:auto;
+ padding-top:4px
+ }
+ .hc_lnav .allbtn ul li dl a{ /*菜单下面最左侧的样式*/
+ line-height:22px;
+ float:left;
+ color:#d9e7ce;
+ margin-left:6px;
+ margin-right:6px;
+ }
+ .hc_lnav .allbtn ul li dt{ /*最右侧的分类dt样式*/
+ padding-left:10px;
+ width:30px;
+ float:left;
+ padding-top:1px
+ }
+ .hc_lnav .allbtn ul li dd{ /*最左侧的分类dt样式*/
+ line-height:22px;
+ width:150px;
+ float:left;
+ padding-top:2px
+ }
+ /*二级导航隐藏*/
+ .hc_lnav .allbtn ul li .pop{ /*二级导航隐藏的样式*/
+ border-bottom:#599900 2px solid;
+ position:absolute;
+ border-left:medium none;
+ background-color:#fcfcfc;
+ min-height:466px;
+ padding-left:5px;
+ width:150px;
+ padding-right:5px;
+ display:none;
+ height:686px;
+ border-top:medium none;
+ border-right:#599900 2px solid;
+ padding-top:10px;
+ left:190px;
+ }
+
+ .hc_lnav .allbtn ul li .pop dl:hover{
+ background-color:#f3f3f3 /*鼠标浏览二级隐藏域商品时的背景色*/
+ }
+ .hc_lnav .allbtn ul li .pop dl a{
+ color:#666666;
+ margin-left:12px; /*二级隐藏域商品链接a标签的样式*/
+ margin-right:12px
+ }
+ .hc_lnav .allbtn ul li .pop dt{ /*二级隐藏域最右侧的标签样式*/
+ padding-left:5px;
+ width:72px;
+ }
+ .hc_lnav .allbtn ul li .pop dd{ /*二级隐藏域左侧的商品样式标签*/
+ width:150px;
+ margin-left:-12px;
+ }
+ .hc_lnav .allbtn ul li .pop .act{ /*二级隐藏域下端的图片*/
+ width:150px;
+ height:80px;
+ overflow:hidden;
+ padding-top:10px
+ }
+ .hc_lnav .allbtn:hover ul{ /*控制一级菜单显示隐藏*/
+ display:block
+ }
+
+ .hc_lnav .allbtn ul li:hover{
+ background-color:#fcfcfc /*鼠标停留一级隐藏域的背景色*/
+ }
+ .hc_lnav .allbtn ul li:hover .tx{ /*鼠标停留一级隐藏域商品分类的的背景色*/
+ background-color:#f5f5f5
+ }
+ .hc_lnav .allbtn ul li:hover .tx a{ /*当鼠标停留在另一个a标签上面的时候，上一个a标签的颜色*/
+ color:#333333
+ }
+
+ .hc_lnav .allbtn ul li:hover .pop{ /*控制二级菜单显示隐藏*/
+ display:block;
+ top:0px;
+ left:190px
+ }
+ .hc_lnav .allbtn ul li:hover dl{ /*一级隐藏域和二级隐藏域最右侧的字体样式颜色*/
+ color:#6e6e6e
+ }
+ .hc_lnav .allbtn ul li:hover a{
+ color:#666666
+ }
+ .hc_lnav .allbtn ul li:hover a:hover{ /*鼠标停留在商品上面的字体颜色*/
+ color:#cd0606
+ }
+
+
+</style>
+<body>
+<div class="hc_lnav">
+ <div class="allbtn">
+ <h2><a href="#"><strong> </strong>全部商品分类<i> </i></a></h2>
+ <ul style="width:160px">
+ <li class=a1>
+ <div class=tx><a href="#"><i> </i>各地名优茶</a> </div>
+ <dl>
+ <dt>热门</dt>
+ <dd>
+ <a href="#">西湖龙井</a>
+ <a href="#">金骏眉</a>
+ <a href="#">大红袍</a>
+ <a href="#">铁观音</a>
+ </dd>
+ </dl>
+ <dl>
+ <dt>名茶</dt>
+ <dd>
+ <a href="#">红茶</a>
+ <a href="#">绿茶</a>
+ <a href="#">乌龙茶</a>
+ <a href="#">黑茶</a>
+ <a href="#">白茶 </a>
+ </dd>
+ </dl>
+ <div class=pop>
+ <h3><a href="#">各地名优茶</a></h3>
+ <dl>
+ <dl>
+ <dt>绿茶</dt>
+ <dd>
+ <a class="" href="#">西湖龙井</a>
+ <a class="" href="#">龙井</a>
+
+ </dd>
+ </dl>
+ <dl>
+ <dt>乌龙茶</dt>
+ <dd>
+ <a class="" href="">铁观音</a>
+ <a class="" href="">大红袍</a>
+
+ </dd>
+ </dl>
+ <dl>
+ <dt>红茶</dt>
+ <dd>
+ <a class="" href="" >金骏眉</a>
+ <a class="" href="">正山小种</a>
+
+ </dd>
+ </dl>
+ <dl>
+ <dt>黑茶</dt>
+ <dd>
+ <a class="" href="">白沙溪黑茶</a>
+ <a class="" href="">普洱茶饼</a>
+
+ </dd>
+ </dl>
+ <dl>
+ <dt>白茶</dt>
+ <dd>
+ <a class="" href="#">白牡丹</a>
+ <a class="" href="">白毫银针</a>
+
+ </dd>
+ </dl>
+ </dl>
+ <dl>
+ <dt>品牌</dt>
+ <dd>
+ <a href="">滋恩</a>
+ <a href="">远荣</a>
+
+ </dd>
+ </dl>
+ <dl>
+ <dt>价格</dt>
+ <dd>
+ <a href="">100元及以下</a>
+ <a href="">100-300元</a>
+
+ </dd>
+ </dl>
+ <dl>
+ <dt>净含量</dt>
+ <dd>
+ <a href="" >50g及以下</a>
+ <a href="">51-100g</a>
+
+ </dd>
+ </dl>
+ <dl>
+ <dt>包装</dt>
+ <dd>
+ <a href="">经济自饮装</a>
+ <a href="" >精美礼品装</a>
+ </dd>
+ </dl>
+ <div class=clr></div>
+ <div class=act><a href=""><img src="http://img.php.cn/upload/course/000/000/006/5822e1629bbd5997.jpg" /></a> </div>
+ </div>
+ </li>
+ </ul>
+ </div>
+</div>
+</body>
+</html>
