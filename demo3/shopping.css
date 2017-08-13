@@ -128,6 +128,134 @@
 
 
 
+/*这是导航栏部分*/
+
+#navigation{
+    width: 100%;
+    height: 28px;
+    background-color: #da5920;
+}
+
+
+#navigation2{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+
+}
+
+.daohang{
+    position: absolute;
+}
+
+.daohang li{
+    float: left;
+    padding-right: 20px;
+    margin-right: 20px;
+    /*display: inline-block;*/
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-right: 1px solid #ffffff;
+
+}
+
+.fenlei{
+    width: 100px;
+    text-align: center;
+}
+
+
+.daohang2{
+    float: left;
+    width: 110px;
+    display: block;
+    z-index: 99;
+}
+
+.daohang2 li{
+    border: none;
+    width: 100px;
+    background-color: red;
+}
+
+.daohang2 li:nth-of-type(odd){
+    background-color: #eaeaea;
+}
+
+.daohang2 li:nth-of-type(even){
+    background-color: #fbfbfb;
+}
+
+.daohang2{
+    display: none;
+
+}
+
+.fenlei:hover .daohang2{
+    display: block;
+}
+
+
+/*banner图标轮播部分*/
+
+#banner{
+    width: 100%;
+    height: 360px;
+    background-color:#353b5f ;
+    position: relative;
+    overflow: hidden;
+}
+
+#pic {
+    width: 4073px;
+    height: 360px;
+    position: absolute;
+    margin-left: 180px;
+    animation-name: focusmap;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    transition: translate(0, 0);
+}
+
+
+/*@keyframes focusmap {*/
+/*10%{*/
+/*left: 0;*/
+/*}*/
+
+/*30%{*/
+/*left: -2038px;*/
+/*}*/
+
+/*60%{*/
+/*left: -3057px;*/
+/*}*/
+/*90%{*/
+/*left: -4073px;*/
+/*}*/
+
+/*}*/
+
+
+
+#pic li{
+    float: left;
+    margin-right: 180px;
+}
+#pic li img{
+    width: 1019px;
+    height: 360px;
+    z-index: 1;
+}
+
+
+
+
 
 
 
