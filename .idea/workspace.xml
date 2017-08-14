@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b93e6a2-f41f-40b8-b59d-ec9feaa61b9f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo3/daohan2.html" afterPath="$PROJECT_DIR$/demo3/daohan2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo3/reset.css" afterPath="$PROJECT_DIR$/demo3/reset.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo3/shopping.css" afterPath="$PROJECT_DIR$/demo3/shopping.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo3/shopping.html" afterPath="$PROJECT_DIR$/demo3/shopping.html" />
     </list>
@@ -46,11 +44,12 @@
           <file leaf-file-name="shopping.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/demo3/shopping.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+                <state relative-caret-position="296">
+                  <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
                   <folding>
                     <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -63,8 +62,8 @@
           <file leaf-file-name="shopping.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/demo3/shopping.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="176" column="16" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
+                <state relative-caret-position="311">
+                  <caret line="292" column="0" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -306,12 +305,12 @@
       <workItem from="1500908503960" duration="1085000" />
       <workItem from="1500992685591" duration="20798000" />
       <workItem from="1501911097209" duration="225000" />
-      <workItem from="1501912471183" duration="26805000" />
+      <workItem from="1501912471183" duration="30598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48913000" />
+    <option name="totallyTimeSpent" value="52706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -436,7 +435,7 @@
         <state relative-caret-position="333">
           <caret line="30" column="51" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="51" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -534,19 +533,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo3/shopping.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="176" column="16" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
+        <state relative-caret-position="311">
+          <caret line="292" column="0" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo3/shopping.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+        <state relative-caret-position="296">
+          <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

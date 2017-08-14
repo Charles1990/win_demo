@@ -256,6 +256,54 @@ ul li{
 
 
 
+/*品牌汇部分*/
+
+#brand{
+    width: 1000px;
+    margin: 0 auto;
+    height: 500px;
+    background-color: #00C7FC;
+    margin-top: 20px;
+}
+
+.pinpaihui a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: orange;
+}
+
+.pinpaihui{
+    border-bottom: 2px solid #000000;
+}
+
+/*品牌汇三个字下面的部分*/
+
+.part1_A{
+    width: 180px;
+    height: 80px;
+
+    border-bottom: 1px solid gainsboro;
+
+}
+
+.part1_A img{
+    display: inline-block;
+    float: right;
+}
+
+.part1_A ul{
+    display: inline-block;
+}
+
+.part1_A span{
+    font-size: 2.8em;
+    line-height: 80px;
+    border-right: 1px dotted gold;
+    padding-right: 5px;
+}
+
+
+
 
 
 
