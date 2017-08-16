@@ -175,6 +175,7 @@ ul li{
     width: 110px;
     display: block;
     z-index: 99;
+    position: relative;
 }
 
 .daohang2 li{
@@ -199,6 +200,28 @@ ul li{
 .fenlei:hover .daohang2{
     display: block;
 }
+
+
+
+.cijidaohang3{
+    position: relative;
+}
+
+
+.cijidaohang4{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: none;
+}
+
+.cijidaohang3:hover .cijidaohang4{
+    display: block;
+}
+
+
+
+
 
 
 /*banner图标轮播部分*/
@@ -251,6 +274,7 @@ ul li{
     width: 1019px;
     height: 360px;
     z-index: 1;
+    ;
 }
 
 
@@ -262,8 +286,8 @@ ul li{
     width: 1000px;
     margin: 0 auto;
     height: 500px;
-    background-color: #00C7FC;
     margin-top: 20px;
+
 }
 
 .pinpaihui a {
@@ -278,10 +302,15 @@ ul li{
 
 /*品牌汇三个字下面的部分*/
 
+.pinpaihui_part1{
+    float: left;
+}
+
+
+
 .part1_A{
     width: 180px;
     height: 80px;
-
     border-bottom: 1px solid gainsboro;
 
 }
@@ -302,10 +331,30 @@ ul li{
     padding-right: 5px;
 }
 
+.pinpaihui_part2{
+    width: 484px;
+    height: 452px;
 
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
 
+.pinpaihui_part3{
+    width: 120px;
+    float: left;
+    width: 200px;
+    margin-top: 20px;
+}
+.pinpaihui_part4{
+    float: left;
+}
 
-
-
-
+.pinpaihui_part4 img{
+    width: 176px;
+    float: left;
+    height: 380px;
+    margin-left: -80px;
+    margin-top: 10px;
+}
 
